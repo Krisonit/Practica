@@ -1,0 +1,9 @@
+feature,value,test,p_value,significant
+trace,First consult,chi-squared,0.9999999987464203,False
+trace,Blood test,chi-squared,0.9999999987464203,False
+trace,X-ray scan,chi-squared,0.9979912104138964,False
+trace,Physical test,chi-squared,0.9999999987464203,False
+trace,Second consult,chi-squared,0.9999999987464203,False
+trace,Medicine,chi-squared,0.9272880897478213,False
+trace,Final consult,chi-squared,0.9999999987464203,False
+trace,Surgery,chi-squared,0.061996570817284255,False

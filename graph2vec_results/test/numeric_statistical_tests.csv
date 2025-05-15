@@ -1,0 +1,7 @@
+feature,test,p_value,significant
+trace_length,ANOVA,0.463007133506509,False
+trace_length,t-test_0_vs_1,0.08293087317322805,False
+trace_duration,ANOVA,0.47710034025534,False
+trace_duration,t-test_0_vs_1,0.32180184095565456,False
+unique_actions,ANOVA,0.463007133506509,False
+unique_actions,t-test_0_vs_1,0.08293087317322805,False
