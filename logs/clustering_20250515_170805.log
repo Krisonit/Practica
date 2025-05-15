@@ -1,0 +1,295 @@
+2025-05-15 17:08:05,142 - utils - INFO - === Начало выполнения программы ===
+2025-05-15 17:08:05,153 - utils - INFO - Аргументы командной строки: Namespace(method='all', input='data/Hospital.csv')
+2025-05-15 17:08:05,153 - utils - INFO - Загрузка данных из data/prepared_data.csv
+2025-05-15 17:08:05,526 - utils - INFO - Успешно извлечены трассы из данных
+2025-05-15 17:08:05,526 - utils - INFO - Успешно загружено 100 записей
+2025-05-15 17:08:06,779 - utils - INFO - Визуализация распределения данных выполнена
+2025-05-15 17:08:06,779 - utils - INFO - Будут выполнены методы: ['bow', 'act2vec', 'graph2vec']
+2025-05-15 17:08:06,785 - utils - INFO - Обработка метода bow
+2025-05-15 17:08:06,785 - utils - INFO - Векторизация методом bow завершена. Размерность: (100, 31)
+2025-05-15 17:08:06,785 - __main__ - INFO - Запуск кластеризации методом bow
+2025-05-15 17:08:06,791 - __main__ - INFO - Параметры HDBSCAN для bow: {'min_cluster_size': 2, 'min_samples': 2, 'cluster_selection_epsilon': 0.0, 'cluster_selection_method': 'eom', 'metric': 'euclidean'}
+2025-05-15 17:08:06,791 - __main__ - INFO - Размерность данных: (100, 31)
+2025-05-15 17:08:06,795 - __main__ - INFO - Данные разделены на train (70) и test (30)
+2025-05-15 17:08:11,212 - __main__ - INFO - Начало кластеризации для train данных...
+2025-05-15 17:08:23,444 - __main__ - INFO - Train кластеризация завершена. Получено 5 кластеров
+2025-05-15 17:08:23,444 - __main__ - INFO - Начало кластеризации для test данных...
+2025-05-15 17:08:23,511 - __main__ - INFO - Test кластеризация завершена. Получено 2 кластеров
+2025-05-15 17:08:23,528 - __main__ - INFO - Внутренние метрики сохранены
+2025-05-15 17:08:23,528 - __main__ - INFO - Информация о кластерах сохранена
+2025-05-15 17:08:23,528 - __main__ - INFO - Метрики качества для train: F1=0.156, ARI=0.001
+2025-05-15 17:08:23,535 - __main__ - INFO - Метрики качества для test: F1=0.357, ARI=0.228
+2025-05-15 17:08:24,869 - __main__ - INFO - Визуализации кластеров сохранены
+2025-05-15 17:08:24,869 - __main__ - INFO - Начало дополнительных анализов для train данных...
+2025-05-15 17:08:25,815 - __main__ - INFO - N-gram анализ для train данных завершен
+2025-05-15 17:08:26,717 - root - INFO - Определенные специализации врачей:
+2025-05-15 17:08:26,717 - root - INFO -  Dr. Alex: ['Хирург']
+2025-05-15 17:08:26,717 - root - INFO -  Dr. Anna: ['Терапевт']
+2025-05-15 17:08:26,717 - root - INFO -  Dr. Ben: ['Терапевт']
+2025-05-15 17:08:26,717 - root - INFO -  Dr. Bob: ['Терапевт']
+2025-05-15 17:08:26,717 - root - INFO -  Dr. Charlie: ['Хирург']
+2025-05-15 17:08:26,717 - root - INFO -  Dr. Quinn: ['Хирург']
+2025-05-15 17:08:26,717 - root - INFO -  Dr. Rudy: ['Хирург']
+2025-05-15 17:08:26,717 - root - INFO -  Lab: ['Лаборант']
+2025-05-15 17:08:26,717 - root - INFO -  Nurse Corey: ['Лаборант', 'Медсестра']
+2025-05-15 17:08:26,717 - root - INFO -  Nurse Jesse: ['Лаборант', 'Медсестра']
+2025-05-15 17:08:26,717 - root - INFO -  Pharmacy: ['Фармацевт']
+2025-05-15 17:08:26,717 - root - INFO -  Team 1: ['Рентгенолог']
+2025-05-15 17:08:26,717 - root - INFO -  Team 2: ['Рентгенолог']
+2025-05-15 17:08:26,717 - root - INFO - Специализации врачей определены автоматически
+2025-05-15 17:08:26,717 - root - INFO - Определенные специализации: {' Dr. Alex': ['Хирург'], ' Dr. Anna': ['Терапевт'], ' Dr. Ben': ['Терапевт'], ' Dr. Bob': ['Терапевт'], ' Dr. Charlie': ['Хирург'], ' Dr. Quinn': ['Хирург'], ' Dr. Rudy': ['Хирург'], ' Lab': ['Лаборант'], ' Nurse Corey': ['Лаборант', 'Медсестра'], ' Nurse Jesse': ['Лаборант', 'Медсестра'], ' Pharmacy': ['Фармацевт'], ' Team 1': ['Рентгенолог'], ' Team 2': ['Рентгенолог']}
+2025-05-15 17:08:28,706 - __main__ - INFO - Анализ врачей для train данных завершен
+2025-05-15 17:08:28,846 - __main__ - INFO - Статистический анализ для train данных завершен
+2025-05-15 17:08:28,857 - __main__ - INFO - Текстовый отчет для train данных сгенерирован
+2025-05-15 17:08:28,860 - __main__ - INFO - Начало дополнительных анализов для test данных...
+2025-05-15 17:08:29,409 - __main__ - INFO - N-gram анализ для test данных завершен
+2025-05-15 17:08:30,258 - root - INFO - Определенные специализации врачей:
+2025-05-15 17:08:30,258 - root - INFO -  Dr. Alex: ['Хирург']
+2025-05-15 17:08:30,258 - root - INFO -  Dr. Anna: ['Терапевт']
+2025-05-15 17:08:30,258 - root - INFO -  Dr. Ben: ['Терапевт']
+2025-05-15 17:08:30,258 - root - INFO -  Dr. Bob: ['Терапевт']
+2025-05-15 17:08:30,258 - root - INFO -  Dr. Charlie: ['Хирург']
+2025-05-15 17:08:30,258 - root - INFO -  Dr. Quinn: ['Хирург']
+2025-05-15 17:08:30,258 - root - INFO -  Dr. Rudy: ['Хирург']
+2025-05-15 17:08:30,258 - root - INFO -  Lab: ['Лаборант']
+2025-05-15 17:08:30,258 - root - INFO -  Nurse Corey: ['Лаборант', 'Медсестра']
+2025-05-15 17:08:30,258 - root - INFO -  Nurse Jesse: ['Лаборант', 'Медсестра']
+2025-05-15 17:08:30,258 - root - INFO -  Pharmacy: ['Фармацевт']
+2025-05-15 17:08:30,258 - root - INFO -  Team 1: ['Рентгенолог']
+2025-05-15 17:08:30,258 - root - INFO -  Team 2: ['Рентгенолог']
+2025-05-15 17:08:30,258 - root - INFO - Специализации врачей определены автоматически
+2025-05-15 17:08:30,258 - root - INFO - Определенные специализации: {' Dr. Alex': ['Хирург'], ' Dr. Anna': ['Терапевт'], ' Dr. Ben': ['Терапевт'], ' Dr. Bob': ['Терапевт'], ' Dr. Charlie': ['Хирург'], ' Dr. Quinn': ['Хирург'], ' Dr. Rudy': ['Хирург'], ' Lab': ['Лаборант'], ' Nurse Corey': ['Лаборант', 'Медсестра'], ' Nurse Jesse': ['Лаборант', 'Медсестра'], ' Pharmacy': ['Фармацевт'], ' Team 1': ['Рентгенолог'], ' Team 2': ['Рентгенолог']}
+2025-05-15 17:08:31,950 - __main__ - INFO - Анализ врачей для test данных завершен
+2025-05-15 17:08:32,039 - __main__ - INFO - Статистический анализ для test данных завершен
+2025-05-15 17:08:32,050 - __main__ - INFO - Текстовый отчет для test данных сгенерирован
+2025-05-15 17:08:32,052 - __main__ - INFO - Результаты кластеризации методом bow сохранены
+2025-05-15 17:08:32,052 - __main__ - INFO - Запуск анализа на полном датасете для лучшего метода
+2025-05-15 17:08:34,576 - __main__ - INFO - Анализ полного датасета завершен
+2025-05-15 17:08:34,576 - utils - INFO - Кластеризация методом bow успешно завершена
+2025-05-15 17:08:34,577 - utils - INFO - Обработка метода act2vec
+2025-05-15 17:08:34,578 - gensim.models.word2vec - INFO - collecting all words and their counts
+2025-05-15 17:08:34,578 - gensim.models.word2vec - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-05-15 17:08:34,578 - gensim.models.word2vec - INFO - collected 8 word types from a corpus of 690 raw words and 100 sentences
+2025-05-15 17:08:34,578 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-05-15 17:08:34,592 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=5 retains 8 unique words (100.00% of original 8, drops 0)', 'datetime': '2025-05-15T17:08:34.578212', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-05-15 17:08:34,592 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=5 leaves 690 word corpus (100.00% of original 690, drops 0)', 'datetime': '2025-05-15T17:08:34.592434', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-05-15 17:08:34,592 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 8 items
+2025-05-15 17:08:34,592 - gensim.models.word2vec - INFO - sample=0.001 downsamples 8 most-common words
+2025-05-15 17:08:34,592 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 66.07798000913263 word corpus (9.6%% of prior 690)', 'datetime': '2025-05-15T17:08:34.592434', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-05-15 17:08:34,592 - gensim.models.word2vec - INFO - constructing a huffman tree from 8 words
+2025-05-15 17:08:34,592 - gensim.models.word2vec - INFO - built huffman tree with maximum node depth 4
+2025-05-15 17:08:34,592 - gensim.models.word2vec - INFO - estimated required memory for 8 words and 32 dimensions: 7648 bytes
+2025-05-15 17:08:34,592 - gensim.models.word2vec - INFO - resetting layer weights
+2025-05-15 17:08:34,592 - gensim.utils - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-05-15T17:08:34.592434', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'build_vocab'}
+2025-05-15 17:08:34,592 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training model with 3 workers on 8 vocabulary and 32 features, using sg=0 hs=1 sample=0.001 negative=0 window=2 shrink_windows=True', 'datetime': '2025-05-15T17:08:34.592434', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-05-15 17:08:34,602 - gensim.models.word2vec - INFO - EPOCH 0: training on 690 raw words (60 effective words) took 0.0s, 25461 effective words/s
+2025-05-15 17:08:34,606 - gensim.models.word2vec - INFO - EPOCH 1: training on 690 raw words (73 effective words) took 0.0s, 320879 effective words/s
+2025-05-15 17:08:34,612 - gensim.models.word2vec - INFO - EPOCH 2: training on 690 raw words (74 effective words) took 0.0s, 71852 effective words/s
+2025-05-15 17:08:34,612 - gensim.models.word2vec - INFO - EPOCH 3: training on 690 raw words (68 effective words) took 0.0s, 59539 effective words/s
+2025-05-15 17:08:34,621 - gensim.models.word2vec - INFO - EPOCH 4: training on 690 raw words (71 effective words) took 0.0s, 306961 effective words/s
+2025-05-15 17:08:34,630 - gensim.models.word2vec - INFO - EPOCH 5: training on 690 raw words (69 effective words) took 0.0s, 208585 effective words/s
+2025-05-15 17:08:34,632 - gensim.models.word2vec - INFO - EPOCH 6: training on 690 raw words (69 effective words) took 0.0s, 57357 effective words/s
+2025-05-15 17:08:34,639 - gensim.models.word2vec - INFO - EPOCH 7: training on 690 raw words (72 effective words) took 0.0s, 78117 effective words/s
+2025-05-15 17:08:34,645 - gensim.models.word2vec - INFO - EPOCH 8: training on 690 raw words (62 effective words) took 0.0s, 974843 effective words/s
+2025-05-15 17:08:34,649 - gensim.models.word2vec - INFO - EPOCH 9: training on 690 raw words (52 effective words) took 0.0s, 75901 effective words/s
+2025-05-15 17:08:34,655 - gensim.models.word2vec - INFO - EPOCH 10: training on 690 raw words (57 effective words) took 0.0s, 274964 effective words/s
+2025-05-15 17:08:34,660 - gensim.models.word2vec - INFO - EPOCH 11: training on 690 raw words (58 effective words) took 0.0s, 1806855 effective words/s
+2025-05-15 17:08:34,661 - gensim.models.word2vec - INFO - EPOCH 12: training on 690 raw words (84 effective words) took 0.0s, 256724 effective words/s
+2025-05-15 17:08:34,661 - gensim.models.word2vec - INFO - EPOCH 13: training on 690 raw words (64 effective words) took 0.0s, 144047 effective words/s
+2025-05-15 17:08:34,673 - gensim.models.word2vec - INFO - EPOCH 14: training on 690 raw words (56 effective words) took 0.0s, 266540 effective words/s
+2025-05-15 17:08:34,677 - gensim.models.word2vec - INFO - EPOCH 15: training on 690 raw words (59 effective words) took 0.0s, 43981 effective words/s
+2025-05-15 17:08:34,681 - gensim.models.word2vec - INFO - EPOCH 16: training on 690 raw words (61 effective words) took 0.0s, 85843 effective words/s
+2025-05-15 17:08:34,684 - gensim.models.word2vec - INFO - EPOCH 17: training on 690 raw words (52 effective words) took 0.0s, 85316 effective words/s
+2025-05-15 17:08:34,686 - gensim.models.word2vec - INFO - EPOCH 18: training on 690 raw words (60 effective words) took 0.0s, 74303 effective words/s
+2025-05-15 17:08:34,691 - gensim.models.word2vec - INFO - EPOCH 19: training on 690 raw words (80 effective words) took 0.0s, 82722 effective words/s
+2025-05-15 17:08:34,695 - gensim.models.word2vec - INFO - EPOCH 20: training on 690 raw words (50 effective words) took 0.0s, 200160 effective words/s
+2025-05-15 17:08:34,695 - gensim.models.word2vec - INFO - EPOCH 21: training on 690 raw words (77 effective words) took 0.0s, 131108 effective words/s
+2025-05-15 17:08:34,704 - gensim.models.word2vec - INFO - EPOCH 22: training on 690 raw words (69 effective words) took 0.0s, 1578948 effective words/s
+2025-05-15 17:08:34,712 - gensim.models.word2vec - INFO - EPOCH 23: training on 690 raw words (60 effective words) took 0.0s, 71250 effective words/s
+2025-05-15 17:08:34,717 - gensim.models.word2vec - INFO - EPOCH 24: training on 690 raw words (64 effective words) took 0.0s, 56889 effective words/s
+2025-05-15 17:08:34,718 - gensim.models.word2vec - INFO - EPOCH 25: training on 690 raw words (75 effective words) took 0.0s, 310688 effective words/s
+2025-05-15 17:08:34,729 - gensim.models.word2vec - INFO - EPOCH 26: training on 690 raw words (67 effective words) took 0.0s, 72059 effective words/s
+2025-05-15 17:08:34,735 - gensim.models.word2vec - INFO - EPOCH 27: training on 690 raw words (67 effective words) took 0.0s, 37301 effective words/s
+2025-05-15 17:08:34,744 - gensim.models.word2vec - INFO - EPOCH 28: training on 690 raw words (75 effective words) took 0.0s, 47283 effective words/s
+2025-05-15 17:08:34,746 - gensim.models.word2vec - INFO - EPOCH 29: training on 690 raw words (57 effective words) took 0.0s, 63887 effective words/s
+2025-05-15 17:08:34,751 - gensim.models.word2vec - INFO - EPOCH 30: training on 690 raw words (61 effective words) took 0.0s, 100428 effective words/s
+2025-05-15 17:08:34,751 - gensim.models.word2vec - INFO - EPOCH 31: training on 690 raw words (50 effective words) took 0.0s, 61259 effective words/s
+2025-05-15 17:08:34,761 - gensim.models.word2vec - INFO - EPOCH 32: training on 690 raw words (57 effective words) took 0.0s, 71188 effective words/s
+2025-05-15 17:08:34,761 - gensim.models.word2vec - INFO - EPOCH 33: training on 690 raw words (68 effective words) took 0.0s, 206061 effective words/s
+2025-05-15 17:08:34,768 - gensim.models.word2vec - INFO - EPOCH 34: training on 690 raw words (67 effective words) took 0.0s, 1498882 effective words/s
+2025-05-15 17:08:34,777 - gensim.models.word2vec - INFO - EPOCH 35: training on 690 raw words (66 effective words) took 0.0s, 147223 effective words/s
+2025-05-15 17:08:34,780 - gensim.models.word2vec - INFO - EPOCH 36: training on 690 raw words (65 effective words) took 0.0s, 76769 effective words/s
+2025-05-15 17:08:34,787 - gensim.models.word2vec - INFO - EPOCH 37: training on 690 raw words (63 effective words) took 0.0s, 75395 effective words/s
+2025-05-15 17:08:34,792 - gensim.models.word2vec - INFO - EPOCH 38: training on 690 raw words (58 effective words) took 0.0s, 83489 effective words/s
+2025-05-15 17:08:34,796 - gensim.models.word2vec - INFO - EPOCH 39: training on 690 raw words (53 effective words) took 0.0s, 62923 effective words/s
+2025-05-15 17:08:34,800 - gensim.models.word2vec - INFO - EPOCH 40: training on 690 raw words (66 effective words) took 0.0s, 102884 effective words/s
+2025-05-15 17:08:34,810 - gensim.models.word2vec - INFO - EPOCH 41: training on 690 raw words (64 effective words) took 0.0s, 69580 effective words/s
+2025-05-15 17:08:34,812 - gensim.models.word2vec - INFO - EPOCH 42: training on 690 raw words (70 effective words) took 0.0s, 103842 effective words/s
+2025-05-15 17:08:34,814 - gensim.models.word2vec - INFO - EPOCH 43: training on 690 raw words (63 effective words) took 0.0s, 310958 effective words/s
+2025-05-15 17:08:34,825 - gensim.models.word2vec - INFO - EPOCH 44: training on 690 raw words (49 effective words) took 0.0s, 54360 effective words/s
+2025-05-15 17:08:34,829 - gensim.models.word2vec - INFO - EPOCH 45: training on 690 raw words (79 effective words) took 0.0s, 113555 effective words/s
+2025-05-15 17:08:34,831 - gensim.models.word2vec - INFO - EPOCH 46: training on 690 raw words (81 effective words) took 0.0s, 83205 effective words/s
+2025-05-15 17:08:34,841 - gensim.models.word2vec - INFO - EPOCH 47: training on 690 raw words (64 effective words) took 0.0s, 291174 effective words/s
+2025-05-15 17:08:34,846 - gensim.models.word2vec - INFO - EPOCH 48: training on 690 raw words (66 effective words) took 0.0s, 87941 effective words/s
+2025-05-15 17:08:34,849 - gensim.models.word2vec - INFO - EPOCH 49: training on 690 raw words (59 effective words) took 0.0s, 85039 effective words/s
+2025-05-15 17:08:34,850 - gensim.utils - INFO - Word2Vec lifecycle event {'msg': 'training on 34500 raw words (3231 effective words) took 0.3s, 12729 effective words/s', 'datetime': '2025-05-15T17:08:34.850996', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-05-15 17:08:34,850 - gensim.utils - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=8, vector_size=32, alpha=0.025>', 'datetime': '2025-05-15T17:08:34.850996', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-05-15 17:08:34,858 - gensim.utils - INFO - Word2Vec lifecycle event {'fname_or_handle': 'output/act2vec_results\\act2vec_model.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-05-15T17:08:34.858130', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'saving'}
+2025-05-15 17:08:34,862 - gensim.utils - INFO - not storing attribute cum_table
+2025-05-15 17:08:34,864 - gensim.utils - INFO - saved output/act2vec_results\act2vec_model.model
+2025-05-15 17:08:34,864 - utils - INFO - Векторизация методом act2vec завершена. Размерность: (100, 32)
+2025-05-15 17:08:34,864 - __main__ - INFO - Запуск кластеризации методом act2vec
+2025-05-15 17:08:34,864 - __main__ - INFO - Параметры HDBSCAN для act2vec: {'min_cluster_size': 2, 'min_samples': 2, 'cluster_selection_epsilon': 0.0, 'metric': 'euclidean', 'cluster_selection_method': 'eom'}
+2025-05-15 17:08:34,864 - __main__ - INFO - Размерность данных: (100, 32)
+2025-05-15 17:08:34,869 - __main__ - INFO - Данные разделены на train (70) и test (30)
+2025-05-15 17:08:36,343 - __main__ - INFO - Начало кластеризации для train данных...
+2025-05-15 17:08:36,564 - __main__ - INFO - Train кластеризация завершена. Получено 4 кластеров
+2025-05-15 17:08:36,564 - __main__ - INFO - Начало кластеризации для test данных...
+2025-05-15 17:08:36,633 - __main__ - INFO - Test кластеризация завершена. Получено 3 кластеров
+2025-05-15 17:08:36,633 - __main__ - INFO - Внутренние метрики сохранены
+2025-05-15 17:08:36,633 - __main__ - INFO - Информация о кластерах сохранена
+2025-05-15 17:08:36,633 - __main__ - INFO - Метрики качества для train: F1=0.290, ARI=0.002
+2025-05-15 17:08:36,633 - __main__ - INFO - Метрики качества для test: F1=0.215, ARI=0.118
+2025-05-15 17:08:38,124 - __main__ - INFO - Визуализации кластеров сохранены
+2025-05-15 17:08:38,124 - __main__ - INFO - Начало дополнительных анализов для train данных...
+2025-05-15 17:08:39,356 - __main__ - INFO - N-gram анализ для train данных завершен
+2025-05-15 17:08:40,279 - root - INFO - Определенные специализации врачей:
+2025-05-15 17:08:40,279 - root - INFO -  Dr. Alex: ['Хирург']
+2025-05-15 17:08:40,279 - root - INFO -  Dr. Anna: ['Терапевт']
+2025-05-15 17:08:40,279 - root - INFO -  Dr. Ben: ['Терапевт']
+2025-05-15 17:08:40,279 - root - INFO -  Dr. Bob: ['Терапевт']
+2025-05-15 17:08:40,279 - root - INFO -  Dr. Charlie: ['Хирург']
+2025-05-15 17:08:40,279 - root - INFO -  Dr. Quinn: ['Хирург']
+2025-05-15 17:08:40,279 - root - INFO -  Dr. Rudy: ['Хирург']
+2025-05-15 17:08:40,279 - root - INFO -  Lab: ['Лаборант']
+2025-05-15 17:08:40,279 - root - INFO -  Nurse Corey: ['Лаборант', 'Медсестра']
+2025-05-15 17:08:40,279 - root - INFO -  Nurse Jesse: ['Лаборант', 'Медсестра']
+2025-05-15 17:08:40,279 - root - INFO -  Pharmacy: ['Фармацевт']
+2025-05-15 17:08:40,279 - root - INFO -  Team 1: ['Рентгенолог']
+2025-05-15 17:08:40,279 - root - INFO -  Team 2: ['Рентгенолог']
+2025-05-15 17:08:40,279 - root - INFO - Специализации врачей определены автоматически
+2025-05-15 17:08:40,288 - root - INFO - Определенные специализации: {' Dr. Alex': ['Хирург'], ' Dr. Anna': ['Терапевт'], ' Dr. Ben': ['Терапевт'], ' Dr. Bob': ['Терапевт'], ' Dr. Charlie': ['Хирург'], ' Dr. Quinn': ['Хирург'], ' Dr. Rudy': ['Хирург'], ' Lab': ['Лаборант'], ' Nurse Corey': ['Лаборант', 'Медсестра'], ' Nurse Jesse': ['Лаборант', 'Медсестра'], ' Pharmacy': ['Фармацевт'], ' Team 1': ['Рентгенолог'], ' Team 2': ['Рентгенолог']}
+2025-05-15 17:08:44,932 - __main__ - INFO - Анализ врачей для train данных завершен
+2025-05-15 17:08:45,698 - __main__ - INFO - Статистический анализ для train данных завершен
+2025-05-15 17:08:45,745 - __main__ - INFO - Текстовый отчет для train данных сгенерирован
+2025-05-15 17:08:45,745 - __main__ - INFO - Начало дополнительных анализов для test данных...
+2025-05-15 17:08:47,660 - __main__ - INFO - N-gram анализ для test данных завершен
+2025-05-15 17:08:50,001 - root - INFO - Определенные специализации врачей:
+2025-05-15 17:08:50,001 - root - INFO -  Dr. Alex: ['Хирург']
+2025-05-15 17:08:50,001 - root - INFO -  Dr. Anna: ['Терапевт']
+2025-05-15 17:08:50,001 - root - INFO -  Dr. Ben: ['Терапевт']
+2025-05-15 17:08:50,001 - root - INFO -  Dr. Bob: ['Терапевт']
+2025-05-15 17:08:50,001 - root - INFO -  Dr. Charlie: ['Хирург']
+2025-05-15 17:08:50,001 - root - INFO -  Dr. Quinn: ['Хирург']
+2025-05-15 17:08:50,001 - root - INFO -  Dr. Rudy: ['Хирург']
+2025-05-15 17:08:50,001 - root - INFO -  Lab: ['Лаборант']
+2025-05-15 17:08:50,001 - root - INFO -  Nurse Corey: ['Лаборант', 'Медсестра']
+2025-05-15 17:08:50,017 - root - INFO -  Nurse Jesse: ['Лаборант', 'Медсестра']
+2025-05-15 17:08:50,017 - root - INFO -  Pharmacy: ['Фармацевт']
+2025-05-15 17:08:50,017 - root - INFO -  Team 1: ['Рентгенолог']
+2025-05-15 17:08:50,019 - root - INFO -  Team 2: ['Рентгенолог']
+2025-05-15 17:08:50,019 - root - INFO - Специализации врачей определены автоматически
+2025-05-15 17:08:50,019 - root - INFO - Определенные специализации: {' Dr. Alex': ['Хирург'], ' Dr. Anna': ['Терапевт'], ' Dr. Ben': ['Терапевт'], ' Dr. Bob': ['Терапевт'], ' Dr. Charlie': ['Хирург'], ' Dr. Quinn': ['Хирург'], ' Dr. Rudy': ['Хирург'], ' Lab': ['Лаборант'], ' Nurse Corey': ['Лаборант', 'Медсестра'], ' Nurse Jesse': ['Лаборант', 'Медсестра'], ' Pharmacy': ['Фармацевт'], ' Team 1': ['Рентгенолог'], ' Team 2': ['Рентгенолог']}
+2025-05-15 17:08:54,480 - __main__ - INFO - Анализ врачей для test данных завершен
+2025-05-15 17:08:54,703 - __main__ - INFO - Статистический анализ для test данных завершен
+2025-05-15 17:08:54,733 - __main__ - INFO - Текстовый отчет для test данных сгенерирован
+2025-05-15 17:08:54,749 - __main__ - INFO - Результаты кластеризации методом act2vec сохранены
+2025-05-15 17:08:54,749 - utils - INFO - Кластеризация методом act2vec успешно завершена
+2025-05-15 17:08:54,749 - utils - INFO - Обработка метода graph2vec
+2025-05-15 17:08:54,796 - gensim.models.doc2vec - INFO - collecting all words and their counts
+2025-05-15 17:08:54,796 - gensim.models.doc2vec - INFO - PROGRESS: at example #0, processed 0 words (0 words/s), 0 word types, 0 tags
+2025-05-15 17:08:54,796 - gensim.models.doc2vec - INFO - collected 17 word types and 100 unique tags from a corpus of 100 examples and 2760 words
+2025-05-15 17:08:54,796 - gensim.models.word2vec - INFO - Creating a fresh vocabulary
+2025-05-15 17:08:54,796 - gensim.utils - INFO - Doc2Vec lifecycle event {'msg': 'effective_min_count=5 retains 17 unique words (100.00% of original 17, drops 0)', 'datetime': '2025-05-15T17:08:54.796841', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-05-15 17:08:54,796 - gensim.utils - INFO - Doc2Vec lifecycle event {'msg': 'effective_min_count=5 leaves 2760 word corpus (100.00% of original 2760, drops 0)', 'datetime': '2025-05-15T17:08:54.796841', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-05-15 17:08:54,796 - gensim.models.word2vec - INFO - deleting the raw counts dictionary of 17 items
+2025-05-15 17:08:54,796 - gensim.models.word2vec - INFO - sample=0.0001 downsamples 17 most-common words
+2025-05-15 17:08:54,796 - gensim.utils - INFO - Doc2Vec lifecycle event {'msg': 'downsampling leaves estimated 113.35681060609878 word corpus (4.1%% of prior 2760)', 'datetime': '2025-05-15T17:08:54.796841', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'prepare_vocab'}
+2025-05-15 17:08:54,812 - gensim.models.word2vec - INFO - estimated required memory for 17 words and 64 dimensions: 62804 bytes
+2025-05-15 17:08:54,812 - gensim.models.word2vec - INFO - resetting layer weights
+2025-05-15 17:08:54,812 - gensim.utils - INFO - Doc2Vec lifecycle event {'msg': 'training model with 4 workers on 17 vocabulary and 64 features, using sg=1 hs=0 sample=0.0001 negative=5 window=0 shrink_windows=True', 'datetime': '2025-05-15T17:08:54.812718', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-05-15 17:08:54,828 - gensim.models.word2vec - INFO - EPOCH 0: training on 2760 raw words (218 effective words) took 0.0s, 27305 effective words/s
+2025-05-15 17:08:54,844 - gensim.models.word2vec - INFO - EPOCH 1: training on 2760 raw words (212 effective words) took 0.0s, 64729 effective words/s
+2025-05-15 17:08:54,864 - gensim.models.word2vec - INFO - EPOCH 2: training on 2760 raw words (202 effective words) took 0.0s, 52970 effective words/s
+2025-05-15 17:08:54,876 - gensim.models.word2vec - INFO - EPOCH 3: training on 2760 raw words (223 effective words) took 0.0s, 3358435 effective words/s
+2025-05-15 17:08:54,895 - gensim.models.word2vec - INFO - EPOCH 4: training on 2760 raw words (220 effective words) took 0.0s, 25751 effective words/s
+2025-05-15 17:08:54,910 - gensim.models.word2vec - INFO - EPOCH 5: training on 2760 raw words (214 effective words) took 0.0s, 29210 effective words/s
+2025-05-15 17:08:54,923 - gensim.models.word2vec - INFO - EPOCH 6: training on 2760 raw words (197 effective words) took 0.0s, 21114 effective words/s
+2025-05-15 17:08:54,941 - gensim.models.word2vec - INFO - EPOCH 7: training on 2760 raw words (214 effective words) took 0.0s, 19594 effective words/s
+2025-05-15 17:08:54,955 - gensim.models.word2vec - INFO - EPOCH 8: training on 2760 raw words (207 effective words) took 0.0s, 26810 effective words/s
+2025-05-15 17:08:54,973 - gensim.models.word2vec - INFO - EPOCH 9: training on 2760 raw words (197 effective words) took 0.0s, 24629 effective words/s
+2025-05-15 17:08:54,988 - gensim.models.word2vec - INFO - EPOCH 10: training on 2760 raw words (196 effective words) took 0.0s, 21578 effective words/s
+2025-05-15 17:08:55,002 - gensim.models.word2vec - INFO - EPOCH 11: training on 2760 raw words (225 effective words) took 0.0s, 33940 effective words/s
+2025-05-15 17:08:55,019 - gensim.models.word2vec - INFO - EPOCH 12: training on 2760 raw words (198 effective words) took 0.0s, 21680 effective words/s
+2025-05-15 17:08:55,035 - gensim.models.word2vec - INFO - EPOCH 13: training on 2760 raw words (212 effective words) took 0.0s, 43585 effective words/s
+2025-05-15 17:08:55,051 - gensim.models.word2vec - INFO - EPOCH 14: training on 2760 raw words (206 effective words) took 0.0s, 28208 effective words/s
+2025-05-15 17:08:55,068 - gensim.models.word2vec - INFO - EPOCH 15: training on 2760 raw words (198 effective words) took 0.0s, 21507 effective words/s
+2025-05-15 17:08:55,084 - gensim.models.word2vec - INFO - EPOCH 16: training on 2760 raw words (182 effective words) took 0.0s, 18847 effective words/s
+2025-05-15 17:08:55,100 - gensim.models.word2vec - INFO - EPOCH 17: training on 2760 raw words (199 effective words) took 0.0s, 25431 effective words/s
+2025-05-15 17:08:55,114 - gensim.models.word2vec - INFO - EPOCH 18: training on 2760 raw words (219 effective words) took 0.0s, 25588 effective words/s
+2025-05-15 17:08:55,137 - gensim.models.word2vec - INFO - EPOCH 19: training on 2760 raw words (208 effective words) took 0.0s, 25857 effective words/s
+2025-05-15 17:08:55,137 - gensim.utils - INFO - Doc2Vec lifecycle event {'msg': 'training on 55200 raw words (4147 effective words) took 0.3s, 12880 effective words/s', 'datetime': '2025-05-15T17:08:55.137136', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'train'}
+2025-05-15 17:08:55,137 - gensim.utils - INFO - Doc2Vec lifecycle event {'params': 'Doc2Vec<dbow,d64,n5,mc5,s0.0001,t4>', 'datetime': '2025-05-15T17:08:55.137136', 'gensim': '4.3.3', 'python': '3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.26100-SP0', 'event': 'created'}
+2025-05-15 17:08:55,148 - utils - INFO - Векторизация методом graph2vec завершена. Размерность: (100, 64)
+2025-05-15 17:08:55,149 - __main__ - INFO - Запуск кластеризации методом graph2vec
+2025-05-15 17:08:55,149 - __main__ - INFO - Параметры HDBSCAN для graph2vec: {'min_cluster_size': 2, 'min_samples': 2, 'cluster_selection_epsilon': 0.0, 'metric': 'euclidean', 'cluster_selection_method': 'eom'}
+2025-05-15 17:08:55,149 - __main__ - INFO - Размерность данных: (100, 64)
+2025-05-15 17:08:55,156 - __main__ - INFO - Данные разделены на train (70) и test (30)
+2025-05-15 17:08:58,283 - __main__ - INFO - Начало кластеризации для train данных...
+2025-05-15 17:08:58,574 - __main__ - INFO - Train кластеризация завершена. Получено 7 кластеров
+2025-05-15 17:08:58,574 - __main__ - INFO - Начало кластеризации для test данных...
+2025-05-15 17:08:58,720 - __main__ - INFO - Test кластеризация завершена. Получено 3 кластеров
+2025-05-15 17:08:58,720 - __main__ - INFO - Внутренние метрики сохранены
+2025-05-15 17:08:58,725 - __main__ - INFO - Информация о кластерах сохранена
+2025-05-15 17:08:58,736 - __main__ - INFO - Метрики качества для train: F1=0.178, ARI=0.015
+2025-05-15 17:08:58,736 - __main__ - INFO - Метрики качества для test: F1=0.173, ARI=-0.026
+2025-05-15 17:09:03,030 - __main__ - INFO - Визуализации кластеров сохранены
+2025-05-15 17:09:03,030 - __main__ - INFO - Начало дополнительных анализов для train данных...
+2025-05-15 17:09:06,460 - __main__ - INFO - N-gram анализ для train данных завершен
+2025-05-15 17:09:09,246 - root - INFO - Определенные специализации врачей:
+2025-05-15 17:09:09,246 - root - INFO -  Dr. Alex: ['Хирург']
+2025-05-15 17:09:09,246 - root - INFO -  Dr. Anna: ['Терапевт']
+2025-05-15 17:09:09,246 - root - INFO -  Dr. Ben: ['Терапевт']
+2025-05-15 17:09:09,246 - root - INFO -  Dr. Bob: ['Терапевт']
+2025-05-15 17:09:09,246 - root - INFO -  Dr. Charlie: ['Хирург']
+2025-05-15 17:09:09,246 - root - INFO -  Dr. Quinn: ['Хирург']
+2025-05-15 17:09:09,246 - root - INFO -  Dr. Rudy: ['Хирург']
+2025-05-15 17:09:09,246 - root - INFO -  Lab: ['Лаборант']
+2025-05-15 17:09:09,246 - root - INFO -  Nurse Corey: ['Лаборант', 'Медсестра']
+2025-05-15 17:09:09,246 - root - INFO -  Nurse Jesse: ['Лаборант', 'Медсестра']
+2025-05-15 17:09:09,246 - root - INFO -  Pharmacy: ['Фармацевт']
+2025-05-15 17:09:09,246 - root - INFO -  Team 1: ['Рентгенолог']
+2025-05-15 17:09:09,246 - root - INFO -  Team 2: ['Рентгенолог']
+2025-05-15 17:09:09,246 - root - INFO - Специализации врачей определены автоматически
+2025-05-15 17:09:09,246 - root - INFO - Определенные специализации: {' Dr. Alex': ['Хирург'], ' Dr. Anna': ['Терапевт'], ' Dr. Ben': ['Терапевт'], ' Dr. Bob': ['Терапевт'], ' Dr. Charlie': ['Хирург'], ' Dr. Quinn': ['Хирург'], ' Dr. Rudy': ['Хирург'], ' Lab': ['Лаборант'], ' Nurse Corey': ['Лаборант', 'Медсестра'], ' Nurse Jesse': ['Лаборант', 'Медсестра'], ' Pharmacy': ['Фармацевт'], ' Team 1': ['Рентгенолог'], ' Team 2': ['Рентгенолог']}
+2025-05-15 17:09:14,759 - __main__ - INFO - Анализ врачей для train данных завершен
+2025-05-15 17:09:15,264 - __main__ - INFO - Статистический анализ для train данных завершен
+2025-05-15 17:09:15,311 - __main__ - INFO - Текстовый отчет для train данных сгенерирован
+2025-05-15 17:09:15,311 - __main__ - INFO - Начало дополнительных анализов для test данных...
+2025-05-15 17:09:16,888 - __main__ - INFO - N-gram анализ для test данных завершен
+2025-05-15 17:09:19,722 - root - INFO - Определенные специализации врачей:
+2025-05-15 17:09:19,724 - root - INFO -  Dr. Alex: ['Хирург']
+2025-05-15 17:09:19,726 - root - INFO -  Dr. Anna: ['Терапевт']
+2025-05-15 17:09:19,726 - root - INFO -  Dr. Ben: ['Терапевт']
+2025-05-15 17:09:19,726 - root - INFO -  Dr. Bob: ['Терапевт']
+2025-05-15 17:09:19,726 - root - INFO -  Dr. Charlie: ['Хирург']
+2025-05-15 17:09:19,726 - root - INFO -  Dr. Quinn: ['Хирург']
+2025-05-15 17:09:19,726 - root - INFO -  Dr. Rudy: ['Хирург']
+2025-05-15 17:09:19,726 - root - INFO -  Lab: ['Лаборант']
+2025-05-15 17:09:19,726 - root - INFO -  Nurse Corey: ['Лаборант', 'Медсестра']
+2025-05-15 17:09:19,732 - root - INFO -  Nurse Jesse: ['Лаборант', 'Медсестра']
+2025-05-15 17:09:19,732 - root - INFO -  Pharmacy: ['Фармацевт']
+2025-05-15 17:09:19,732 - root - INFO -  Team 1: ['Рентгенолог']
+2025-05-15 17:09:19,732 - root - INFO -  Team 2: ['Рентгенолог']
+2025-05-15 17:09:19,732 - root - INFO - Специализации врачей определены автоматически
+2025-05-15 17:09:19,732 - root - INFO - Определенные специализации: {' Dr. Alex': ['Хирург'], ' Dr. Anna': ['Терапевт'], ' Dr. Ben': ['Терапевт'], ' Dr. Bob': ['Терапевт'], ' Dr. Charlie': ['Хирург'], ' Dr. Quinn': ['Хирург'], ' Dr. Rudy': ['Хирург'], ' Lab': ['Лаборант'], ' Nurse Corey': ['Лаборант', 'Медсестра'], ' Nurse Jesse': ['Лаборант', 'Медсестра'], ' Pharmacy': ['Фармацевт'], ' Team 1': ['Рентгенолог'], ' Team 2': ['Рентгенолог']}
+2025-05-15 17:09:23,982 - __main__ - INFO - Анализ врачей для test данных завершен
+2025-05-15 17:09:24,213 - __main__ - INFO - Статистический анализ для test данных завершен
+2025-05-15 17:09:24,219 - __main__ - INFO - Текстовый отчет для test данных сгенерирован
+2025-05-15 17:09:24,241 - __main__ - INFO - Результаты кластеризации методом graph2vec сохранены
+2025-05-15 17:09:24,243 - utils - INFO - Кластеризация методом graph2vec успешно завершена
+2025-05-15 17:09:24,251 - utils - INFO - Сводная таблица результатов сохранена в output/comparison/summary_results.csv
+2025-05-15 17:09:24,251 - utils - INFO - Лучший метод по F1-score на тесте: bow
+2025-05-15 17:09:24,251 - utils - INFO - Запуск расширенного анализа для лучшего метода: bow
+2025-05-15 17:09:29,685 - utils - INFO - Полный анализ для метода bow сохранен в output/bow_results\full_analysis
+2025-05-15 17:09:29,686 - utils - INFO - === Программа успешно завершена ===
